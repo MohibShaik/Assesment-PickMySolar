@@ -1,0 +1,58 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <div class="app-title">
+            <span>P</span>ICK <span>M</span>Y <span>S</span>OLAR
+        </div>
+        <span class="toolbar-spacer"></span>
+
+        <span class="line-separator"></span>
+        <mat-icon class="user-icon" svgIcon="loginUser"></mat-icon>
+        <div class="account-container">
+            <div class="user-name">
+                <div>{{user?.name}}</div>
+            </div>
+
+        </div>
+        <mat-icon class="expand-more-icon" [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+
+        <mat-menu class="toolbar-user-menu" #beforeMenu="matMenu" xPosition="before">
+            <div class="logout-container">
+                <div class="user-email">
+                    {{user?.email}}
+                </div>
+                <hr align="center" width="90%" />
+                <div class="logout-action" (click)="signOut()">
+                    Logout
+                </div>
+            </div>
+        </mat-menu>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened>
+        <div class="sidenav-main">
+            <div class="f-header">
+                <a class="header-title" routerLink="/dashboard/home" routerLinkActive="active-link">Home
+                </a>
+            </div>
+            <div class="f-header">
+                <a class="header-title" routerLink="/home/PredictionStatus" routerLinkActive="active-link">
+                    Profile</a>
+            </div>
+            <div class="f-header">
+                <a href="https://github.com/MohibShaik/Assesment-PickMySolar" target="_blank">Source Code
+                </a>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,119 @@
+mat-toolbar {
+    background: #128c7e;
+    border-bottom: 2px solid #474747;
+    box-shadow: 0px 3px 6px #00000029;
+    position: relative;
+    z-index: 10;
+    mat-toolbar-row {
+        padding: 0 32px;
+
+        button {
+            color: #fff;
+        }
+
+        .app-title {
+            color: #fff;
+            font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+            font-size: 1.1875rem;
+            font-weight: normal;
+            > span {
+                font-size: 1.375rem;
+            }
+        }
+
+        .toolbar-spacer {
+            flex: 1 1 auto;
+        }
+        .line-separator {
+            height: 20px;
+            margin: 0 30px !important;
+            border-right: 1px solid #fff;
+        }
+
+        .user-icon {
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .account-container {
+            display: flex;
+            flex-direction: column;
+            line-height: 15px;
+            margin-right: 20px;
+
+            > .user-name {
+                font-size: 0.9375rem;
+                font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+                color: #fff;
+            }
+
+            > .manufacturer-name {
+                font-size: 0.6875rem;
+                color: #fff;
+                font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+                font-weight: normal;
+            }
+        }
+        .expand-more-icon {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.header-title {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,
+a:active {
+    color: #128c7e;
+}
+
+.active-link {
+    font-weight: 600 !important;
+    color: #128c7e !important ;
+}
+
+.logout-container {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+    font-size: 0.9375rem;
+    .user-email {
+        padding: 7px;
+    }
+
+    .logout-action {
+        padding: 0.333333em;
+        cursor: pointer;
+    }
+}
+
+.sidenav-main {
+    padding: 70px 30px 0;
+    .f-header {
+        margin-bottom: 1.565em;
+        padding: 0.5195rem 0.625rem;
+        font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+        font-size: 1.321em;
+        font-weight: 400;
+        color: #fff;
+        border-radius: 0.25rem;
+
+        > .a {
+            margin: 0;
+            font-weight: normal;
+            font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
+            font-size: 1.0625rem;
+        }
+    }
+}
