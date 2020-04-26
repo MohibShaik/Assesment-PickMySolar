@@ -1,9 +1,9 @@
 
-# DonateKart Task
+# Pick My Solar - Assesment
 
 1. To clone the repo run the below command from your terminal.
     
-    `git clone https://github.com/MohibShaik/Task.git`
+    `git clone https://github.com/MohibShaik/Assesment-PickMySolar.git`
 
 2. After cloning the repo install node modules by running the following command from root directory of project .
   
