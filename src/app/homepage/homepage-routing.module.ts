@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
+import { HomeComponent } from './dashboard/home/home.component';
 
 const routes: Routes = [
   {
@@ -14,17 +16,11 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () =>
-          import('../homepage/dashboard/home/home.module').then(
-            (mod) => mod.HomeModule
-          ),
+        component: HomeComponent,
       },
       {
         path: 'profile',
-        loadChildren: () =>
-          import('../homepage/dashboard/profile/profile.module').then(
-            (mod) => mod.ProfileModule
-          ),
+        component: ProfileComponent,
       },
     ],
   },
