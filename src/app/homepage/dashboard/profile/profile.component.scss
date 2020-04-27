@@ -4,6 +4,7 @@
     margin: auto;
     height: 28rem;
     margin-top: 3rem;
+    border: 1px solid #128c7e;
     .profile-avatar {
         width: 11.5rem;
         height: 11.5rem;
@@ -52,7 +53,6 @@
                     cursor: pointer;
                 }
                 a:hover {
-                    // background: red;
                     color: rgb(238, 57, 57);
                 }
             }
