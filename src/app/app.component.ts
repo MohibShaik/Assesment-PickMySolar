@@ -22,9 +22,9 @@ export class AppComponent {
         )
       )
       .addSvgIcon(
-        `loginPassword`,
+        `password`,
         this.domSanitizer.bypassSecurityTrustResourceUrl(
-          '../assets/images/login/svg/password.svg'
+          '../assets/images/svg/password.svg'
         )
       )
       .addSvgIcon(

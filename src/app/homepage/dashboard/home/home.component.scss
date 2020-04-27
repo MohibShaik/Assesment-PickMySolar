@@ -1,7 +1,21 @@
 .container {
     padding: 100px;
+    .form-group {
+        label {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .footer {
+        h4,
+        div {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
 }
 
 agm-map {
-    height: 300px;
+    height: 350px;
 }

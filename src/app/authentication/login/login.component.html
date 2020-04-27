@@ -15,8 +15,8 @@
                     <mat-form-field class="email-field">
                         <mat-label>Email</mat-label>
                         <input matInput type="email" [formControl]='signInForm.controls.email'>
-                        <span matPrefix>
-                            <!-- <mat-icon svgIcon="loginUser"></mat-icon> -->
+                        <span matPrefix class="email-icon">
+                            <mat-icon svgIcon="loginUser"></mat-icon>
                         </span>
                         <mat-error *ngIf="signInForm.controls.email.errors">
                             {{signInForm.controls.email.errors.required.message}}</mat-error>
@@ -26,7 +26,7 @@
                         <mat-label>Password</mat-label>
                         <input matInput type="password" [formControl]='signInForm.controls.password'>
                         <span matPrefix class="password-icon">
-                            <!-- <mat-icon svgIcon="loginPassword"></mat-icon> -->
+                            <mat-icon svgIcon="password"></mat-icon>
                         </span>
                         <mat-error *ngIf="signInForm.controls.password.errors">
                             {{signInForm.controls.password.errors.required.message}}</mat-error>
