@@ -1,9 +1,10 @@
 .profile-card {
-    width: 30rem;
+    width: 38rem;
     position: relative;
     margin: auto;
     height: 28rem;
     margin-top: 3rem;
+    border-radius: 10px;
     border: 1px solid #128c7e;
     .profile-avatar {
         width: 11.5rem;
@@ -18,14 +19,12 @@
         }
     }
 
-    .titles {
-        padding-top: 0.625rem;
-        text-align: center;
+    .mat-card-title {
+        margin: auto !important;
     }
 
     .profile-name {
-        padding-top: 2rem;
-        padding-left: 10.5rem;
+        padding: 25px 0px 25px 230px;
     }
 
     .profile-info {
