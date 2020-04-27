@@ -1,0 +1,25 @@
+<mat-card class="profile-card">
+    <mat-card-header>
+        <div class="profile-avatar">
+            <img src="../../../../assets/images/profile-pic.jpg" alt="">
+        </div>
+    </mat-card-header>
+
+    <mat-content>
+        <div class="profile-name">
+            <mat-card-title>Mohib Shaik</mat-card-title>
+            <mat-card-subtitle>Angular Developer</mat-card-subtitle>
+        </div>
+
+        <div class="profile-info">
+            <ul>
+                <li><strong>E-mail address : </strong><span>{{data?.email}}</span></li>
+                <li><strong>Phone number : </strong><span> {{data?.phone}}</span></li>
+                <li><strong>Github Profile : </strong><a href="{{data?.githubUrl}}" target="_blank">
+                        {{data?.linkedInUrl}}</a></li>
+            </ul>
+
+        </div>
+    </mat-content>
+
+</mat-card>

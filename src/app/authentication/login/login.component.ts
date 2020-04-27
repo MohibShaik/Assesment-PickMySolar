@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-// import { RxwebValidators } from '@rxweb/reactive-form-validators';
 import {
   RxFormBuilder,
   IFormGroup,

@@ -6,10 +6,11 @@
         <input mat-input type="text" class="form-control" (keydown.enter)="$event.preventDefault()"
             placeholder="Search  Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
     </div>
-
-    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
-    </agm-map>
+    <div>
+        <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+            <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
+        </agm-map>
+    </div>
 
     <div class="footer">
         <h4>Address: {{address}}</h4>

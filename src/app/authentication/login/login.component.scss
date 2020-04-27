@@ -147,6 +147,9 @@
                         background-color: #128c7e;
                         color: white;
                         margin-top: 14px;
+                        box-shadow: none;
+                        border: none;
+                        outline: none;
                     }
                 }
             }
@@ -165,5 +168,6 @@
         border: 1px solid #fff;
         -webkit-text-fill-color: #585858;
         box-shadow: 0 0 0 1000px #fff inset;
+        font-size: 16px;
     }
 }

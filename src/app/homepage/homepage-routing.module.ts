@@ -19,6 +19,13 @@ const routes: Routes = [
             (mod) => mod.HomeModule
           ),
       },
+      {
+        path: 'profile',
+        loadChildren: () =>
+          import('../homepage/dashboard/profile/profile.module').then(
+            (mod) => mod.ProfileModule
+          ),
+      },
     ],
   },
 ];
